@@ -63,19 +63,21 @@ The goal is to create a backend service to manage and update a scoreboard for a 
      userId VARCHAR PRIMARY KEY,
      username VARCHAR NOT NULL,
      score INT DEFAULT 0
-     );
+     )
     }
     ```
 
     - Actions Table:
 
     ```bash
-        CREATE TABLE actions (
-        actionToken VARCHAR PRIMARY KEY,
-        userId VARCHAR,
-        timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        FOREIGN KEY (userId) REFERENCES users(userId)
-        );
+    {
+      CREATE TABLE actions (
+      actionToken VARCHAR PRIMARY KEY,
+      userId VARCHAR,
+      timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (userId) REFERENCES users(userId)
+      )
+    }
     ```
 
 2.  Score Update Logic: + Verify the actionToken against the actions table to ensure it is valid and not previously used. + If valid, increment the user's score in the users table. + Invalidate the used actionToken to prevent reuse.
@@ -99,6 +101,8 @@ The goal is to create a backend service to manage and update a scoreboard for a 
    - The backend pushes the updated top 10 scores to the frontend via WebSockets.
 
 ## Diagram
+
+![Diagram](https://github.com/kabutoshinki/nguyen_hoang_huy/blob/main/problem_6/images/diagram.png)
 
 ## Improvements
 

@@ -46,7 +46,7 @@ Develop a backend server with ExpressJS using TypeScript. The server should prov
 
 ### Solution
 
-The solution includes setting up the server, connecting to a PostgreSQL database using Prisma, and implementing the required CRUD operations. Instructions for running the application are provided in the `README.md` file within the [crud-server](./crud-server) directory.
+The solution includes setting up the server, connecting to a PostgreSQL database using Prisma, and implementing the required CRUD operations. Instructions for running the application are provided in the `README.md` file within the [crud-server](./problem_5/crud-server) directory.
 
 ---
 
@@ -68,6 +68,6 @@ Write the specification for a software module on the API service (backend applic
 
 The solution involves writing comprehensive documentation for the module, including a flow diagram to illustrate the execution flow. This is intended to be implemented by a backend engineering team.
 
-Detailed documentation and diagrams can be found in the [module_specification](./module_specification) directory.
+Detailed documentation and diagrams can be found in the [module_specification](./problem_6) directory.
 
 ---
