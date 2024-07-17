@@ -45,8 +45,9 @@ Before you begin, ensure you have met the following requirements:
    ```
 4. Run database migrations and seed data (if applicable)
    ```bash
-   npm run build
+   npx prisma generate
    npx prisma migrate deploy
+   npm run build
    npm run seed
    ```
 
@@ -169,3 +170,14 @@ To run the server in development mode:
 ```bash
 npm run dev
 ```
+
+## Debugging
+
+If you encounter Docker related issues like 'ContainerConfig', try:
+
+```bash
+docker-compose down -v
+docker-compose up --build
+```
+
+This will remove existing containers and volumes, and then rebuild the containers.
