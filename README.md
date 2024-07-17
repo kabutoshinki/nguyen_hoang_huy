@@ -23,8 +23,8 @@ Provide three unique implementations of the function that calculates the summati
 The solutions are provided in three separate functions:
 
 1. **Function A**: Uses a loop to sum the numbers.
-2. **Function B**: Utilizes the formula for the sum of an arithmetic series.
-3. **Function C**: Implements a recursive approach to calculate the sum.
+2. **Function B**: Implements a recursive approach to calculate the sum.
+3. **Function C**: Utilizes the formula for the sum of an arithmetic series.
 
 Detailed implementations and explanations can be found in the [problem_4](./problem_4) directory.
 
